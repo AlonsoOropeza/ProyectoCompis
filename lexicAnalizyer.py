@@ -55,7 +55,7 @@ D -> ' '
 # print(*nonTerminals, sep = ', ')
 
 def readFile():
-  f = open("grammar", "r")
+  f = open("grammar.txt", "r")
   grammar = f.readlines()
   f.close()
   N = int(grammar[0][0])

@@ -15,7 +15,7 @@ grammar, strings = lA.readFile()
 terminals, nonTerminals = lA.lexicAnalyzer(grammar)
 dic = fF.grammarToDic(grammar, nonTerminals) # transforms the grammar
 firsts, follows, LL1 = fF.firfoll1(nonTerminals, terminals, dic)
-pr.parser(firsts, follows, LL1, terminals, nonTerminals)
+pr.parser(firsts, follows, LL1, terminals, nonTerminals,strings)
 
 
 
